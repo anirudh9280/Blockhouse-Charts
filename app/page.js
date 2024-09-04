@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import CustomBarChart from './components/CustomBarChart';
 import CustomLineChart from './components/CustomLineChart';
-import CustomPieChart from './components/PieChart';
+import CustomPieChart from './components/CustomPieChart';
 import CandlestickChart from './components/CandlestickChart';
 
 const Dashboard = () => {
@@ -42,45 +42,40 @@ const Dashboard = () => {
   }, []); // Empty dependency array means this runs once on mount
 
   return (
-    <div className="min-h-screen bg-gray-100 py-10 px-6">
+    <div className="min-h-screen bg-gray-900 text-gray-200 py-10 px-6">
       {/* Dashboard title */}
-      <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">Dashboard</h1>
+      <h1 className="text-4xl font-bold text-center mb-8 text-white">Dashboard</h1>
 
-      {/* Main container for the charts */}
-      <div className="space-y-10 max-w-6xl mx-auto">
-
+      {/* Main grid container for the charts */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {/* Line Chart Section */}
-        <div className="bg-white shadow rounded-lg p-6">
-          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Line Chart</h2>
+        <div className="bg-gray-800 shadow-lg rounded-lg p-6">
+          <h2 className="text-2xl font-semibold text-gray-200 mb-4">Line Chart</h2>
           <div className="w-full h-96">
-            {/* Render the CustomLineChart component with data */}
             <CustomLineChart data={lineChartData} />
           </div>
         </div>
 
         {/* Bar Chart Section */}
-        <div className="bg-white shadow rounded-lg p-6">
-          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Bar Chart</h2>
+        <div className="bg-gray-800 shadow-lg rounded-lg p-6">
+          <h2 className="text-2xl font-semibold text-gray-200 mb-4">Bar Chart</h2>
           <div className="w-full h-96">
-            {/* Render the CustomBarChart component with data */}
             <CustomBarChart data={barChartData} />
           </div>
         </div>
 
         {/* Pie Chart Section */}
-        <div className="bg-white shadow rounded-lg p-6">
-          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Pie Chart</h2>
+        <div className="bg-gray-800 shadow-lg rounded-lg p-6">
+          <h2 className="text-2xl font-semibold text-gray-200 mb-4">Pie Chart</h2>
           <div className="w-full h-96">
-            {/* Render the CustomPieChart component with data */}
             <CustomPieChart data={pieChartData} />
           </div>
         </div>
 
         {/* Candlestick Chart Section */}
-        <div className="bg-white shadow rounded-lg p-6">
-          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Candlestick Chart</h2>
+        <div className="bg-gray-800 shadow-lg rounded-lg p-6">
+          <h2 className="text-2xl font-semibold text-gray-200 mb-4">Candlestick Chart</h2>
           <div className="w-full h-auto">
-            {/* Render the CandlestickChart component with data */}
             <CandlestickChart data={candlestickData} />
           </div>
         </div>

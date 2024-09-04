@@ -29,13 +29,13 @@ const CustomBarChart = () => {
             <BarChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
 
                 {/* X-axis for categories */}
-                <XAxis dataKey="label" stroke="#8884d8" />
+                <XAxis dataKey="label" stroke="white" />
 
                 {/* Y-axis for values */}
-                <YAxis stroke="#8884d8" />
+                <YAxis  stroke="white" />
 
                 {/* Grid lines for better visual separation */}
-                <CartesianGrid strokeDasharray="3 3" />
+                <CartesianGrid strokeDasharray="3 3" strokeOpacity={.5} />
 
                 {/* Tooltip to display value details */}
                 <Tooltip />

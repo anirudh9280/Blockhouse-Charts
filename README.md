@@ -34,6 +34,7 @@ Make sure you have the following installed on your machine:
 2. **Install the required Python packages** using `pip`.
 
 3. **Run the Django development server** to start the API.
+- python manage.py runserver
 
 4. Open `http://localhost:8000` to verify the Django API is running.
 
@@ -46,6 +47,7 @@ Make sure you have the following installed on your machine:
 2. **Install the dependencies** using `npm` or `yarn`.
 
 3. **Run the Next.js development server** to start the frontend.
+- npm run dev
 
 4. Open `http://localhost:3000` to view the frontend.
 
@@ -83,14 +85,6 @@ To learn more about the frameworks and libraries used in this project, take a lo
 
 ---
 
-## Deployed App 
-
-To deploy the app, you can use platforms like **Vercel** (for Next.js) and **Heroku** or **DigitalOcean** (for Django). Detailed deployment instructions for both platforms are available in their respective documentation.
-
-- [Vercel for Next.js](https://vercel.com/)
-- [Heroku for Django](https://www.heroku.com/)
-
----
 
 ## Approach and Thought Process
 
@@ -111,14 +105,4 @@ The primary challenge was integrating multiple charts into a unified dashboard w
 ### 3. **Styling (Tailwind CSS)**
 For the UI, **Tailwind CSS** was chosen due to its ease of use and ability to quickly build responsive and clean interfaces. The layout is simple, focusing on functionality over complex design, making the dashboard intuitive and easy to navigate.
 
-### 4. **State Management (Optional)**
-In this project, state management was kept minimal as the components directly fetch data from the API on render. However, if the project scales or if there’s a need for more complex data management, tools like **Redux** can be introduced to handle global state.
 
-### 5. **Testing**
-- For the **Django backend**, unit tests ensure that each API endpoint works correctly and returns the expected data structure. 
-- For the **Next.js frontend**, unit and integration tests are written using **Jest** and **React Testing Library** to verify that the components render correctly and handle data fetching properly.
-
-### 6. **Docker (Optional)**
-While Docker was not used in this particular setup, it can easily be introduced to containerize both the frontend and backend for a more consistent development environment. Dockerizing the project ensures that both the Django and Next.js applications can be easily run in any environment with minimal setup.
-
-This modular approach allows for easy scalability and maintenance of the project. Each component (both frontend and backend) is isolated, making it easier to debug, maintain, and extend in the future.

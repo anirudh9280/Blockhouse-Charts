@@ -30,13 +30,13 @@ const CustomLineChart = () => {
             <LineChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
 
                 {/* X-axis for labels (e.g., months) */}
-                <XAxis dataKey="label" />
+                <XAxis dataKey="label" stroke="white"/>
 
                 {/* Y-axis for values */}
-                <YAxis />
+                <YAxis stroke="white"/>
 
                 {/* Grid for better readability */}
-                <CartesianGrid strokeDasharray="3 3" />
+                <CartesianGrid strokeDasharray="3 3" strokeOpacity={.5} />
 
                 {/* Tooltip to show data on hover */}
                 <Tooltip />

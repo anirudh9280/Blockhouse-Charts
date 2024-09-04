@@ -81,9 +81,9 @@ const CandlestickChart = ({ data }) => {
                     data={processedData}
                     margin={{ top: 20, right: 50, left: 50, bottom: 40 }}
                 >
-                    <XAxis dataKey="x" padding={{ left: 50, right: 50 }} />
-                    <YAxis domain={[adjustedMinValue, adjustedMaxValue]} />
-                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="x" padding={{ left: 50, right: 50 }} stroke="white" />
+                    <YAxis domain={[adjustedMinValue, adjustedMaxValue]} stroke="white" />
+                    <CartesianGrid strokeDasharray="3 3" strokeOpacity={.5} />
                     <Tooltip />
                     <Bar
                         dataKey="openClose"
