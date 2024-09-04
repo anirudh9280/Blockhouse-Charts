@@ -7,10 +7,8 @@ This is a web application built using **Next.js** on the frontend and **Django**
 - [Backend Setup (Django)](#backend-setup-django)
 - [Frontend Setup (Next.js)](#frontend-setup-nextjs)
 - [Libraries and Tools Used](#libraries-and-tools-used)
-- [Running Tests](#running-tests)
 - [Notes](#notes)
 - [Learn More](#learn-more)
-- [Deploying the App](#deploying-the-app)
 - [Approach and Thought Process](#approach-and-thought-process)
 
 

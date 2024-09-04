@@ -43,6 +43,10 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-gray-200 py-10 px-6">
+      {/* My name */}
+      <div className="text-center mb-4">
+        <h2 className="text-xl font-semibold text-gray-400">Anirudh Annabathula</h2>
+      </div>
       {/* Dashboard title */}
       <h1 className="text-4xl font-bold text-center mb-8 text-white">Dashboard</h1>
 
