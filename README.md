@@ -27,7 +27,7 @@ Make sure you have the following installed on your machine:
 
 ## Backend Setup (Django)
 
-1. **Clone the repository** and navigate to the backend directory of the project.
+1. Unzip the folder and navigate to the backend directory of the project.
 
 2. **Install the required Python packages** using `pip`.
 
